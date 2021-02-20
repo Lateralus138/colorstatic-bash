@@ -82,22 +82,20 @@ EOF
         if [[ $COLS_BOOL -eq 0 ]]; then
             COLUMNS=$(tput cols)
         else COLUMNS=$COLUMNS_V; fi
-        INDEX=$[RANDOM%16]
-        printf "${COLORS[INDEX]}\e[$[RANDOM%LINES+1];$[RANDOM%COLUMNS+1]f${PARTS[RANDOM%${#PARTS[@]}]}"
+        INDEX=$((RANDOM%16))
+        printf "${COLORS[INDEX]}\e[$((RANDOM%LINES+1));$((RANDOM%COLUMNS+1))f${PARTS[RANDOM%${#PARTS[@]}]}"
         if [[ "$DELAY" != "0" ]]; then
             if [[ ${#RANGE[@]} -gt 0 ]]; then
-                RANDOM_DELAY=$[RANDOM%${#RANGE[@]}-1]
+                RANDOM_DELAY=$((RANDOM%${#RANGE[@]}-1))
                 DELAY="${RANGE[RANDOM_DELAY]}"
             fi
             sleep $DELAY
         fi
     done
 }
-$(return >/dev/null 2>&1)
-if [[ $? -gt 0 ]]; then
+if ! $(return >/dev/null 2>&1); then
     colorstatic "$@"
 else
-
     # Extra variables of character lists
     # for use with '-p,--parts'.
     alpha="$(printf '%s ' {a..z})"
@@ -128,6 +126,7 @@ else
     complete -W "-d --delay random \
         -l --lines \$LINES \
         -c --columns \$COLUMNS \
-        -p --parts" colorstatic
+        -p --parts \
+        -h --help" colorstatic
 
 fi
