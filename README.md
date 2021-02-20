@@ -29,7 +29,7 @@
       - [Project Status](#project-status)
       - [Latest Version Status](#latest-version-status)
     - [License](#license)
-  - [Files](#files)
+  - [All Files](#all-files)
   - [Media](#media)
     - [Screenshots](#screenshots)
       - [Help Screen](#help-screen)
@@ -227,7 +227,7 @@ Find video demonstrations with versions of these examples in the list of videos 
 
 ___
 
-## Files
+## All Files
 
 All files can be found in the `Continuous Build` page in the `Release` section:
 
