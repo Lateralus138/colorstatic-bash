@@ -235,7 +235,7 @@ Find video demonstrations with versions of these examples in the list of videos 
 #### Code Quality
 
 |Name|Code Quality|
-|:---:|:---:|:---:|
+|:---:|:---:|
 |`colorstatic.bash` Code|![colorstatic.bash Code](https://img.shields.io/codefactor/grade/github/Lateralus138/colorstatic-bash/master?style=for-the-badge)|
 
 ### License
