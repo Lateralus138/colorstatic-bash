@@ -29,6 +29,7 @@
       - [File Status](#file-status)
       - [Project Status](#project-status)
       - [Latest Version Status](#latest-version-status)
+      - [Code Quality](#code-quality)
     - [License](#license)
   - [All Files](#all-files)
   - [Media](#media)
@@ -230,6 +231,12 @@ Find video demonstrations with versions of these examples in the list of videos 
 |Release version|![Release Version](https://img.shields.io/github/v/release/Lateralus138/colorstatic-bash?style=for-the-badge&labelColor=1d1d1d)|
 |Tag version|![Tag Version](https://img.shields.io/github/v/tag/Lateralus138/colorstatic-bash?style=for-the-badge&labelColor=1d1d1d)|
 |Total downloads for current version|![GitHub release (latest by date)](https://img.shields.io/github/downloads/Lateralus138/colorstatic-bash/Continuous/total?style=for-the-badge&labelColor=1d1d1d)|
+
+#### Code Quality
+
+|Name|Code Quality|
+|:---:|:---:|:---:|
+|`colorstatic.bash` Code|![colorstatic.bash Code](https://img.shields.io/codefactor/grade/github/Lateralus138/colorstatic-bash/master?style=for-the-badge)|
 
 ### License
 
