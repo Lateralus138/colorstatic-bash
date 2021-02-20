@@ -13,6 +13,7 @@
     - [Dependancy](#dependancy)
     - [Distribution](#distribution)
     - [Use](#use)
+      - [Permissions](#permissions)
       - [Script and Function](#script-and-function)
         - [Source and Execute as a Function](#source-and-execute-as-a-function)
           - [Source the Function](#source-the-function)
@@ -82,6 +83,17 @@ There are two ways to use this:
  2. An executable only **AppImage**<sup>[ [1: DDG Search](https://duckduckgo.com/?q=AppImage&atb=v1-1&ia=web) ]</sup>.
 
 ### Use
+
+#### Permissions
+
+Any executable file's permission's must must be set to executable:
+
+```Shell
+ # Executable for self only
+ $ chmod u+x /path/to/colorstatic.bash # or .AppImage
+ # Executable all
+ $ chmod +x /path/to/colorstatic.bash # or .AppImage
+```
 
 #### Script and Function
 
