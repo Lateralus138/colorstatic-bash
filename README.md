@@ -29,6 +29,7 @@
       - [Project Status](#project-status)
       - [Latest Version Status](#latest-version-status)
     - [License](#license)
+  - [Files](#files)
   - [Media](#media)
     - [Screenshots](#screenshots)
       - [Help Screen](#help-screen)
@@ -225,6 +226,14 @@ Find video demonstrations with versions of these examples in the list of videos 
 [![](https://img.shields.io/github/license/Lateralus138/blackhosts?style=for-the-badge&labelColor=1d1d1d)](./LICENSE)
 
 ___
+
+## Files
+
+All files can be found in the `Continuous Build` page in the `Release` section:
+
+[Continuous Build](https://github.com/Lateralus138/colorstatic-bash/releases/tag/Continuous)
+
+---
 
 ## Media
 
