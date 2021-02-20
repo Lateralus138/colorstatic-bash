@@ -1,0 +1,3 @@
+*.bash linguist-detectable=true
+*.sh linguist-detectable=true
+*.AppImage linguist-detectable=true

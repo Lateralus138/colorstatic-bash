@@ -1,0 +1,36 @@
+name: AppImage Build
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-16.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Download building tools and executing AppImage build
+      run: |
+        wget -nv -c https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage
+        ./build.sh
+        appimage_text='{\n\t"schemaVersion": 1,\n\t"color": "b91d47",\n\t"label": "AppImage MD5",\n\t"message": "PLACEHOLDER",\n\t"labelColor": "1d1d1d",\n\t"style": "for-the-badge",\n\t"namedLogo": "linux"\n}'
+        touch docs/json/appimage_md5.json
+        echo -e "$appimage_text" > docs/json/appimage_md5.json
+        sed -i "s/\"message\": \".*\"/\"message\": \"$(md5sum ./build/appimage/colorstatic.AppImage | cut -d" " -f 1)\"/g" docs/json/appimage_md5.json
+        push_text='{\n\t"schemaVersion": 1,\n\t"color": "b91d47",\n\t"label": "Last Push",\n\t"message": "PLACEHOLDER",\n\t"labelColor": "1d1d1d",\n\t"style": "for-the-badge",\n\t"namedLogo": "linux"\n}'
+        echo -e "$push_text" > docs/json/last_push.json
+        sed -i "s/\"message\": \".*\"/\"message\": \"$(date)\"/g" docs/json/last_push.json
+        script_md5_text='{\n\t"schemaVersion": 1,\n\t"color": "b91d47",\n\t"label": "Script MD5",\n\t"message": "PLACEHOLDER",\n\t"labelColor": "1d1d1d",\n\t"style": "for-the-badge",\n\t"namedLogo": "linux"\n}'
+        echo -e "$script_md5_text" > docs/json/script_md5.json
+        sed -i "s/\"message\": \".*\"/\"message\": \"$(md5sum build/script/colorstatic.bash | cut -d' ' -f 1)\"/g" docs/json/script_md5.json
+        date_v="$(date)"
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Build and Endpoint Commit
+    - name: Create Release
+      uses: ncipollo/release-action@v1
+      with:
+        allowUpdates: True
+        tag: Continuous
+        name: Continuous Build
+        prerelease: False
+        artifacts: "build/appimage/colorstatic.AppImage,build/script/colorstatic.bash"
+        token: ${{ secrets.GITHUB_TOKEN }}
