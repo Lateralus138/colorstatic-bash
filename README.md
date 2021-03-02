@@ -2,9 +2,7 @@
 
 [<img src="./docs/media/misc/colorstatic.png" alt="ColorStatic Logo" width="192">](docs/media/misc/colorstatic.png)
 
-**NOTE**: There is an small bug with the `--frames` switch, just bad regex matching; which, I should've seen from the get go, but for now the `-f` switch does the same and works just fine.
-
-Fix and refactor already done and coming.
+**NOTE**: Refactor and fixes already done and coming soon.
 
 ---
 
@@ -21,7 +19,7 @@ Fix and refactor already done and coming.
       - [Script and Function](#script-and-function)
         - [Source and Execute as a Function](#source-and-execute-as-a-function)
           - [Source the Function](#source-the-function)
-          - [Execuate as a function](#execuate-as-a-function)
+          - [Execute as a function](#execute-as-a-function)
         - [Execute as a Script](#execute-as-a-script)
       - [AppImage](#appimage)
     - [Examples](#examples)
@@ -117,7 +115,7 @@ The *AppImage* can only be executed with arguments as it is an executable.
  # Or; assuming [[ -d "$HOME/.bash/functions/" ]] or whatever
  $ source $HOME/.bash/functions/colorstatic.bash
 ```
-###### Execuate as a function
+###### Execute as a function
 
 ```Shell
  $ colorstatic --help
