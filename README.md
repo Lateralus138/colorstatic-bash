@@ -2,6 +2,10 @@
 
 [<img src="./docs/media/misc/colorstatic.png" alt="ColorStatic Logo" width="192">](docs/media/misc/colorstatic.png)
 
+**NOTE**: There is an small bug with the `--frames` switch, just bad regex matching; which, I should've seen from the get go, but for now the `-f` switch does the same and works just fine.
+
+Fix and refactor already done and coming.
+
 ---
 
 - [ColorStatic](#colorstatic)

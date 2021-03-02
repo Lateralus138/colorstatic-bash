@@ -1,7 +1,8 @@
 name: AppImage Build
 on:
   push:
-    branches: [ master ]
+    paths:
+    - '**.bash'
 jobs:
   build:
     runs-on: ubuntu-16.04
@@ -22,9 +23,7 @@ jobs:
         echo -e "$script_md5_text" > docs/json/script_md5.json
         sed -i "s/\"message\": \".*\"/\"message\": \"$(md5sum build/script/colorstatic.bash | cut -d' ' -f 1)\"/g" docs/json/script_md5.json
         date_v="$(date)"
-    - uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: Build and Endpoint Commit
+
     - name: Create Release
       uses: ncipollo/release-action@v1
       with:
@@ -34,3 +33,17 @@ jobs:
         prerelease: False
         artifacts: "build/appimage/colorstatic.AppImage,build/script/colorstatic.bash"
         token: ${{ secrets.GITHUB_TOKEN }}
+
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Build and Endpoint Commit
+
+
+      - name: Trigger Windows Workflow
+        if: success()
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.API_TOKEN_GITHUB }}
+          repository: ${{ github.repository }}
+          event-type: trigger-windows-workflow
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
