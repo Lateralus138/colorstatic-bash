@@ -37,13 +37,11 @@ jobs:
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Build and Endpoint Commit
-
-
-      - name: Trigger Windows Workflow
-        if: success()
-        uses: peter-evans/repository-dispatch@v1
-        with:
-          token: ${{ secrets.API_TOKEN_GITHUB }}
-          repository: ${{ github.repository }}
-          event-type: trigger-windows-workflow
-          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+      # - name: Trigger Windows Workflow
+      #   if: success()
+      #   uses: peter-evans/repository-dispatch@v1
+      #   with:
+      #     token: ${{ secrets.API_TOKEN_GITHUB }}
+      #     repository: ${{ github.repository }}
+      #     event-type: trigger-windows-workflow
+      #     client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
