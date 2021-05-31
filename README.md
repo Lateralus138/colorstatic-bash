@@ -6,7 +6,7 @@
 
 ## Coming Soon
 
-***NOTE***: This has been written in ***`C++`*** and will (possibly) be cross-platform for *Windows* and *`^([uU][nN][iI]|[lL][iI][nN][uU])[xX]$`*, but coming to *Linux* first.
+***NOTE***: This has been re-written in ***`C++`*** and will (possibly) be cross-platform for *Windows* and *`^([uU][nN][iI]|[lL][iI][nN][uU])[xX]$`*, but coming to *Linux* first.
 
 ---
 
