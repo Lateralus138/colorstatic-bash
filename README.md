@@ -2,11 +2,18 @@
 
 [<img src="./docs/media/misc/colorstatic.png" alt="ColorStatic Logo" width="192">](docs/media/misc/colorstatic.png)
 
-**NOTE**: Refactor and fixes already done and coming soon.
+---
+
+## Coming Soon
+
+***NOTE***: This has been written in ***`C++`*** and will (possibly) be cross-platform for *Windows* and *`^([uU][nN][iI]|[lL][iI][nN][uU])[xX]$`*, but coming to *Linux* first.
+
+<p style="width: 240px;height: 32px;background: rgba(255,0,0,100%); border-radius: 24px;padding: 8px;font-size: 20px; text-align: center;vertical-align: middle;color: white; box-shadow: 0 -4px  4px #7f0000, inset 0 0px  16px #7f0000; border: 1px dashed rgba(255,255,255,20%);">Coming Soon</p>
 
 ---
 
 - [ColorStatic](#colorstatic)
+  - [Coming Soon](#coming-soon)
   - [About](#about)
     - [Description](#description)
     - [Motivation](#motivation)
