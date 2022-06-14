@@ -4,12 +4,6 @@
 
 ---
 
-If you like this project and care to donate to my PayPal:
-
-[![PayPal Donation](./docs/media/images/paypal_donate_button.png)](https://paypal.me/ianapride?locale.x=en_US)
-
----
-
 ## Coming Soon
 
 ***NOTE***: This has been re-written in ***`C++`*** and will (possibly) be cross-platform for *Windows* and *`^([uU][nN][iI]|[lL][iI][nN][uU])[xX]$`*, but coming to *Linux* first.
@@ -294,3 +288,9 @@ All files can be found in the `Continuous Build` page in the `Release` section:
 |![Demo 3](https://img.youtube.com/vi/GyNQpkrmv50/0.jpg)|[https://youtu.be/GyNQpkrmv50](https://youtu.be/GyNQpkrmv50)|
 |![Demo 2](https://img.youtube.com/vi/-R8tEdHDCpE/0.jpg)|[https://youtu.be/-R8tEdHDCpE](https://youtu.be/-R8tEdHDCpE)|
 |![Demo 1](https://img.youtube.com/vi/jSZO-oy7xqI/0.jpg)|[https://youtu.be/jSZO-oy7xqI](https://youtu.be/jSZO-oy7xqI)|
+
+---
+
+If you like this project and care to donate to my PayPal:
+
+[![PayPal Donation](./docs/media/images/paypal_donate_button.png)](https://paypal.me/ianapride?locale.x=en_US)
