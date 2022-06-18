@@ -8,7 +8,7 @@
 
 ***NOTE***: I strongly recommend this new version&#46;
 
-This has been re-written in ***`C++`*** which is far more performant than this version and isn&#39;t dependant on Bash&#46;
+This has been re-written in ***`C++`*** which is far more performant than this version and isn&#39;t dependent on Bash&#46;
 
 The new version can be found here&#58;
 
