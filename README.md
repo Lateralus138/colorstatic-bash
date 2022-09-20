@@ -1,4 +1,4 @@
-# ColorStatic
+# Color Static Bash Edition
 
 [<img src="./docs/media/misc/colorstatic.png" alt="ColorStatic Logo" width="192">](docs/media/misc/colorstatic.png)
 
