@@ -18,10 +18,6 @@ The new version can be found here&#58;
 
 ## This Version Is Not Recommended.
 
-This project is archived in essence, but still open to the public; just not maintained.
-
-As stated above ***I do not recommend this version*** over the new **C++** version that ***I do recommend*** which is linked above or the [***☞ new version here ☜***](https://www.github.com/Lateralus138/colorstatic).
-
 ---
 
 1. [New Version](#new-version)
@@ -57,7 +53,7 @@ As stated above ***I do not recommend this version*** over the new **C++** versi
    1. [Screenshots](#screenshots)
       1. [Help Screen](#help-screen)
       2. [Main Static](#main-static)
-      3. [Latin Based Characters and digits.](#latin-based-characters-and-digits)
+      3. [Latin Based Chacters and digits.](#latin-based-chacters-and-digits)
       4. [Linux Bash](#linux-bash)
    2. [YouTube Videos](#youtube-videos)
 
@@ -287,7 +283,7 @@ All files can be found in the `Continuous Build` page in the `Release` section:
 
 ![Main Static](docs/media/screenshots/demo_a.png)
 
-#### Latin Based Characters and digits.
+#### Latin Based Chacters and digits.
 
 ![Latin Based Characters](docs/media/screenshots/demo_b.png)
 
